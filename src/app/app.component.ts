@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faGithub, faMedium, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-confirm-password-example';
+  title = 'ngx-confirm-password-example';
+
+  faGithub = faGithub;
+  faMedium = faMedium;
+  faTwitter = faTwitter;
+
+  isNavbarCollapsed = true;
 }

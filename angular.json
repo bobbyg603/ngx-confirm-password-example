@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-confirm-password-example": {
+    "ngx-confirm-password-example": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-confirm-password-example",
+            "outputPath": "dist/ngx-confirm-password-example",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-confirm-password-example:build:production"
+              "browserTarget": "ngx-confirm-password-example:build:production"
             },
             "development": {
-              "browserTarget": "ng-confirm-password-example:build:development"
+              "browserTarget": "ngx-confirm-password-example:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-confirm-password-example:build"
+            "browserTarget": "ngx-confirm-password-example:build"
           }
         },
         "test": {
@@ -100,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "95547390-6213-49d0-aca5-393261201e57"
   }
 }
