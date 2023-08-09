@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, NonNullableFormBuilder, Validators } from '@angular/forms';
 import { ChangePasswordFormGroup, ControlsOf } from './change-password-form-group';
 import { createEqualsValidator } from './equals-validator';
 
@@ -13,25 +13,21 @@ const upperLowerSymbolNumberRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/;
 export class ChangePasswordFormComponent {
   formGroup: FormGroup<ControlsOf<ChangePasswordFormGroup>>;
 
-  private currentPasswordFormControl: FormControl<ChangePasswordFormGroup['currentPassword']>;
-  private newPasswordFormControl: FormControl<ChangePasswordFormGroup['newPassword']>;
-  private confirmPasswordFormControl: FormControl<ChangePasswordFormGroup['confirmPassword']>;
-
-  constructor({ nonNullable }: FormBuilder) {
+  constructor(formBuilder: NonNullableFormBuilder) {
     const validators = [Validators.required, Validators.minLength(8), Validators.pattern(upperLowerSymbolNumberRegex)];
 
-    this.currentPasswordFormControl = nonNullable.control('', validators);
-    this.newPasswordFormControl = nonNullable.control('', validators);
-    this.confirmPasswordFormControl = nonNullable.control('', validators);
+    const currentPassword = formBuilder.control('', validators);
+    const newPassword = formBuilder.control('', validators);
+    const confirmPassword = formBuilder.control('', validators);
 
-    this.formGroup = nonNullable.group<ControlsOf<ChangePasswordFormGroup>>(
+    this.formGroup = formBuilder.group<ControlsOf<ChangePasswordFormGroup>>(
       {
-        currentPassword: this.currentPasswordFormControl,
-        newPassword: this.newPasswordFormControl,
-        confirmPassword: this.confirmPasswordFormControl,
+        currentPassword,
+        newPassword,
+        confirmPassword,
       },
       {
-        validators: createEqualsValidator(this.newPasswordFormControl, this.confirmPasswordFormControl),
+        validators: createEqualsValidator(newPassword, confirmPassword),
       }
     );
   }
