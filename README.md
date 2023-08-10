@@ -61,6 +61,7 @@ Notice that we’re using `Validators.pattern(upperLowerSymbolNumberRegex)`. Thi
 
 Last but not least, let's take a look at the template in [change-password-form.component.html](https://github.com/bobbyg603/ngx-confirm-password-example/blob/main/src/app/change-password-form/change-password-form.component.html).
 
+```html
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-md-6 col-lg-3 text-center">
@@ -79,7 +80,12 @@ Last but not least, let's take a look at the template in [change-password-form.c
     </div>
   </div>
 </div>
+```
 
 Notice that on the very end of the `<form>` tag we’ve added the `errorTailor` directive. The `errorTailor` directive makes validation messages magically appear when a form control has been changed and unfocused.
 
-Thank you for your support ❤️
+## Next Steps 🧑‍💻
+
+If you liked this example, please follow me on [Medium](https://bobbyg603.medium.com/) and [X](https://twitter.com/bobbyg603), where I post programming tutorials and discuss tips and tricks that have helped make me a better programmer.
+
+**Thank you for your support ❤️**
