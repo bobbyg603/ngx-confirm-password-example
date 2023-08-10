@@ -1,27 +1,34 @@
-# NgxConfirmPasswordExample
+# 📐📋🦸 Angular Super Forms: Confirm Password
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+[![medium profile link](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)]([https://medium.com/better-programming/file-uploads-with-angular-and-rxjs-34262b3450ae](https://medium.com/p/bd95906f220f))
+[![twitter profile link](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)]([https://twitter.com/bobbyg603/status/1524465334522195968](https://twitter.com/bobbyg603/status/1689632582994907136))
 
-## Development server
+<img alt="Angualr Super Forms Confirm Password" src="https://github.com/bobbyg603/ngx-confirm-password-example/assets/2646053/332f4d5b-70d9-46ce-b20e-ea30aed5f26b" width="540px" height="auto">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This is is a companion repo for [Angular Super Forms: Confirm Password]([https://betterprogramming.pub/file-uploads-with-angular-and-rxjs-34262b3450ae](https://medium.com/p/bd95906f220f)) that demonstrates how to build a confirm password form with ng-bootstrap, error-tailor, component validation and form validation. Topics in this article include how to configure error-tailor for professional looking errors, validate individual fields, as well as creating a form that validates two components have the same value
 
-## Code scaffolding
+## ☕️ TL;DR
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Clone this repo to your workspace:
 
-## Build
+```sh
+git clone https://github.com/bobbyg603/ngx-confirm-password-example
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Install the dependencies and start the application:
 
-## Running unit tests
+```sh
+cd ngx-confirm-password-example && npm i && npm start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Enter invalid values into the form and click away from the inputs. Also enter a value for new password that doesn't match the value for confirm password before hitting submit. You should see several field validation errors as well as a form validation error at the bottom.
 
-## Running end-to-end tests
+## 🕵️ Inspecting the Code
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+TODO BG
 
-## Further help
+## 🧑‍🎓 Further Exploration
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+TODO BG
+
+Thank you for your support ❤️
