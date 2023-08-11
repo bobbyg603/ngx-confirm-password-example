@@ -24,7 +24,7 @@ cd ngx-confirm-password-example && npm i && npm start
 
 Enter invalid values into the form and click away from the inputs. Also enter a value for new password that doesn't match the value for confirm password before hitting submit. You should see several field validation errors as well as a form validation error at the bottom.
 
-<img alt="Angualr Super Forms Confirm Password" src="https://github.com/bobbyg603/ngx-confirm-password-example/assets/2646053/332f4d5b-70d9-46ce-b20e-ea30aed5f26b" width="540px" height="auto">
+<img alt="Angular Super Forms Preview" width="540px" src="https://github.com/bobbyg603/ngx-confirm-password-example/assets/2646053/2f3095d1-5fa6-4103-b114-b4b6c4908f65">
 
 ## 🕵️ Inspecting the Code
 
